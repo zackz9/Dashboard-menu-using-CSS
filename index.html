@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Start wrapper  -->
+
+    <div class="wrapper">
+        <!-- Start header menu  -->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">
+                    A <span>Dashboard</span>
+                </div>
+                <div class="sidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-power-off"></i></a>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>
+
+        <!-- End header menu  -->
+        <!-- Start sidebar  -->
+
+        <div class="sidebar">
+            <div class="sidebar-menu">
+
+                <div class="profile profile-info">
+                    <img src="./avat.png" alt="">
+                    <p>userName</p>
+                </div>
+
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-desktop"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="item" id="profile">
+                    <a href="#profile" class="menu-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Profile <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-image"></i><span>Picture</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-address-card"></i><span>Info</span>
+                        </a>
+                    </div>
+                </li>
+      
+                <li class="item" id="messages">
+                    <a href="#messages" class="menu-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Messages <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i><span>New</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope-square"></i><span>Sent</span>
+                            
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-exclamation-circle"></i><span>Spam</span>
+                        </a>
+                    </div>
+                </li>
+      
+                <li class="item" id="settings">
+                    <a href="#settings" class="menu-btn">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings <i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-lock"></i><span>Password</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-language"></i><span>Language</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+
+
+
+            </div>
+        </div>
+        <!-- End sidebar -->
+
+
+        <!-- Start main container  -->
+
+        <div class="main-container">
+
+            <div class="card">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod exercitationem obcaecati, nam asperiores nulla maiores, autem, doloribus corrupti est molestias voluptatibus? Ratione quis dicta eligendi, nesciunt neque quod. Ab, ipsum! Asperiores, dolorum consectetur. Quaerat obcaecati reiciendis officiis consequatur dicta eum sed reprehenderit culpa accusantium quis ex molestiae, magnam temporibus amet atque perspiciatis eius? Totam sint itaque reprehenderit perspiciatis maxime delectus est sapiente, ipsa exercitationem aspernatur illo sit! Necessitatibus expedita consequatur magni soluta, fugiat rerum ducimus vitae laboriosam vero nesciunt obcaecati repellat dicta blanditiis omnis quasi similique incidunt libero nobis accusamus? Rerum recusandae voluptates provident! Natus atque dolore ab illo quis, accusantium consectetur corrupti sequi autem accusamus possimus at nisi ratione aut adipisci sunt laudantium deserunt nobis odit incidunt architecto.
+            </div>
+
+            <div class="card">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod exercitationem obcaecati, nam asperiores nulla maiores, autem, doloribus corrupti est molestias voluptatibus? Ratione quis dicta eligendi, nesciunt neque quod. Ab, ipsum! Asperiores, dolorum consectetur. Quaerat obcaecati reiciendis officiis consequatur dicta eum sed reprehenderit culpa accusantium quis ex molestiae, magnam temporibus amet atque perspiciatis eius? Totam sint itaque reprehenderit perspiciatis maxime delectus est sapiente, ipsa exercitationem aspernatur illo sit! Necessitatibus expedita consequatur magni soluta, fugiat rerum ducimus vitae laboriosam vero nesciunt obcaecati repellat dicta blanditiis omnis quasi similique incidunt libero nobis accusamus? Rerum recusandae voluptates provident! Natus atque dolore ab illo quis, accusantium consectetur corrupti sequi autem accusamus possimus at nisi ratione aut adipisci sunt laudantium deserunt nobis odit incidunt architecto.
+            </div>
+
+            <div class="card">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quod exercitationem obcaecati, nam asperiores nulla maiores, autem, doloribus corrupti est molestias voluptatibus? Ratione quis dicta eligendi, nesciunt neque quod. Ab, ipsum! Asperiores, dolorum consectetur. Quaerat obcaecati reiciendis officiis consequatur dicta eum sed reprehenderit culpa accusantium quis ex molestiae, magnam temporibus amet atque perspiciatis eius? Totam sint itaque reprehenderit perspiciatis maxime delectus est sapiente, ipsa exercitationem aspernatur illo sit! Necessitatibus expedita consequatur magni soluta, fugiat rerum ducimus vitae laboriosam vero nesciunt obcaecati repellat dicta blanditiis omnis quasi similique incidunt libero nobis accusamus? Rerum recusandae voluptates provident! Natus atque dolore ab illo quis, accusantium consectetur corrupti sequi autem accusamus possimus at nisi ratione aut adipisci sunt laudantium deserunt nobis odit incidunt architecto.
+            </div>
+
+        </div>
+
+        <!-- End main container  -->
+
+    </div>
+    <!-- End wrapper  -->
+
+    <script src="./app.js"></script>
+</body>
+</html>

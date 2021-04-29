@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.wrapper .header {
+  z-index: 1;
+  background-color: #22242a;
+  position: fixed;
+  width: calc(100% - 0%);
+  height: 70px;
+  display: flex;
+  top: 0;
+}
+.wrapper .header .header-menu {
+  width: calc(100% - 0%);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.wrapper .header .header-menu .title {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.wrapper .header .header-menu .title span {
+  color: rgb(152 147 147 / 68%);
+}
+.wrapper .header .header-menu .sidebar-btn {
+  color: #fff;
+  position: absolute;
+  margin-left: 240px;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+.wrapper .header .header-menu .sidebar-btn:hover {
+  color: rgb(133 44 44 / 68%);
+}
+.wrapper .header .header-menu ul {
+  display: flex;
+}
+.wrapper .header .header-menu ul li a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 18px;
+  line-height: 35px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: background, color;
+}
+.wrapper .header .header-menu ul li a:hover {
+  background-color: rgb(133 44 44 / 68%);
+  color: #fff;
+}
+.wrapper .sidebar {
+  z-index: 1;
+  background-color: #585858;
+  position: fixed;
+  top: 70px;
+  width: 250px;
+  height: calc(100% - 9%);
+  transition: 0.3s;
+  transition-property: width;
+  overflow-y: auto;
+}
+.wrapper .sidebar .sidebar-menu {
+  overflow: hidden;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .sidebar .sidebar-menu .profile.profile-info img {
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.wrapper .sidebar .sidebar-menu .profile.profile-info p {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+.wrapper .sidebar .sidebar-menu .item {
+  width: 250px;
+  overflow: hidden;
+}
+.wrapper .sidebar .sidebar-menu .item .menu-btn {
+  display: block;
+  color: #fff;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+  transition-property: color;
+}
+.wrapper .sidebar .sidebar-menu .item .menu-btn:hover {
+  color: rgb(133 44 44 / 68%);
+}
+.wrapper .sidebar .sidebar-menu .item .menu-btn i {
+  margin-right: 20px;
+}
+.wrapper .sidebar .sidebar-menu .item .menu-btn .drop-down {
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.wrapper .sidebar .sidebar-menu .item .sub-menu {
+  background-color: #4b4b4b;
+  overflow: hidden;
+  transition: 0.3s;
+  max-height: 0;
+  transition-property: background, max-height;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  white-space: nowrap;
+  border-bottom: 1px solid #8fc5e9;
+  transition: 0.3s;
+  transition-property: background;
+}
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:hover {
+  background-color: #55b1f0;
+}
+.wrapper .sidebar .sidebar-menu .item .sub-menu i {
+  padding-right: 20px;
+  font-size: 10px;
+}
+.wrapper .sidebar .sidebar-menu .item:target .sub-menu {
+  max-height: 500px;
+}
+.wrapper .main-container {
+  width: calc(100% - 250px);
+  margin-top: 70px;
+  margin-left: 250px;
+  padding-right: 16px;
+  height: 100vh;
+  background: url("./backg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.wrapper.collapse .sidebar {
+  width: 70px;
+}
+.wrapper.collapse .sidebar .profile img,
+.wrapper.collapse .sidebar .profile p,
+.wrapper.collapse .sidebar a span {
+  display: none;
+}
+.wrapper.collapse .sidebar .sidebar-menu .item .menu-btn {
+  font-size: 23px;
+}
+.wrapper.collapse .sidebar .sidebar-menu .item .sub-menu i {
+  font-size: 18px;
+  padding-left: 5px;
+}
+.wrapper.collapse .main-container {
+  width: calc(100% - 80px);
+  margin-left: 70px;
+}
+.wrapper .main-container .card {
+  background: #fff;
+  padding: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
